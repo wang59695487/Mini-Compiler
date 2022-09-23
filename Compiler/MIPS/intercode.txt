@@ -1,0 +1,100 @@
+void main(){
+            int x = 0;
+            int y = 0;
+            int sum = 0;
+            y = read();
+            while(x<y){
+                x = x + 1;
+                sum = sum + x;
+            }
+            print(sum);
+        }
+
+
+IRTREE
+FUNCTION main :
+Temp0 = #0
+var0 = Temp0
+Temp0 = #0
+var1 = Temp0
+Temp0 = #0
+var2 = Temp0
+Temp0 = CALL read
+var1 = Temp0
+LABEL label_0 :
+Temp0 = var0 < var1
+IF Temp0 != 0 GOTO label_1
+GOTO label_2
+LABEL label_1 :
+Temp1 = #1
+Temp2 = var0 + Temp1
+var0 = Temp2
+Temp1 = var2 + var0
+var2 = Temp1
+GOTO label_0
+LABEL label_2 :
+ARG var2
+CALL print
+
+
+-------------- Abstract Syntax Tree --------------
+
+ —— function_definition —— FUNCTION —— main
+|
+ —— initializer_expression
+|
+ —— Temp —— 0
+|
+ —— initializer_expression
+|
+ —— Temp —— 0
+|
+ —— initializer_expression
+|
+ —— Temp —— 0
+|
+ —— assignment_expression
+|
+ —— function_call
+|
+ —— Temp ——  CALL  —— read
+|
+ —— while_statement
+|
+ —— LABEL label —— 0
+|
+ —— relational_expression
+|
+ —— IF —— Temp0!= 0 —— GOTO label —— 1
+|
+ —— GOTO label —— 2
+|
+ —— LABEL label —— 1
+|
+ —— assignment_expression
+|
+ —— additive_expression
+|
+ —— Temp —— 1
+|
+ —— assignment_expression
+|
+ —— additive_expression
+|
+ —— GOTO label —— 0
+|
+ —— LABEL label —— 2
+|
+ —— function_call
+|
+ —— function_call
+|
+ —— ARGvar2
+|
+ —— CALL —— print
+|
+
+
+-------------- Function-Table ----------------
+
+void main()

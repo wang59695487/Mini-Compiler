@@ -1,0 +1,57 @@
+
+ —— function_definition —— FUNCTION —— main
+|
+ —— initializer_expression
+|
+ —— Temp —— 0
+|
+ —— initializer_expression
+|
+ —— Temp —— 0
+|
+ —— initializer_expression
+|
+ —— Temp —— 0
+|
+ —— assignment_expression
+|
+ —— function_call
+|
+ —— Temp ——  CALL  —— read
+|
+ —— while_statement
+|
+ —— LABEL label —— 0
+|
+ —— relational_expression
+|
+ —— IF —— Temp0!= 0 —— GOTO label —— 1
+|
+ —— GOTO label —— 2
+|
+ —— LABEL label —— 1
+|
+ —— assignment_expression
+|
+ —— additive_expression
+|
+ —— Temp —— 1
+|
+ —— assignment_expression
+|
+ —— additive_expression
+|
+ —— GOTO label —— 0
+|
+ —— LABEL label —— 2
+|
+ —— function_call
+|
+ —— function_call
+|
+ —— ARGvar2
+|
+ —— CALL —— print
+|
+
+

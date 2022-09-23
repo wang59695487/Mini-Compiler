@@ -1,0 +1,26 @@
+int main()
+{
+    int a,b,c,m,t;
+
+    a = read();
+    b = read();
+
+    if( a < b)
+    {
+        t=a;
+        a=b;
+        b=t;
+    }
+
+    m = a * b;
+
+    c = 10 % 5;
+    while(c>0)
+    {
+        a=b;
+        b=c;
+        c=a%b;
+    }
+    print(b);
+    print(m/b);
+}

@@ -1,0 +1,13 @@
+int s(int x){
+	int y = x + 1;
+	int z = x - 1;
+	return y*z;
+}
+
+
+void main()
+{
+	int a = read();
+	int c = s(s(a));
+	print(c);//if input 3, output 63
+}
